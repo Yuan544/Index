@@ -1,0 +1,13 @@
+body{
+  text-align: center; 
+  background-image: url(/Users/fujiikousei/Downloads/monopasuJS/img/中指おじさん.png); 
+}
+
+img{
+    width: 260px;
+    height: 260px;  
+}
+
+.hide{
+    display: none;  
+}
