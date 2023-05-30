@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>おじすぎるじゃんけんゲーム</title>
+</head>
+<body>
+  <h1>うざおじと対決、じゃんけんゲーム</h1>
+  <p id="paragraph">最初はグー！って思うじゃん、けどそれってあなたの思いこみですよね？はい、じゃんけん・・・</p>
+  <div id="gameArea">
+    <img src="img/うざおじ.png" id="imgうざおじ">
+    <div>
+    <img src="img/グーおじ.png" id="imgGu" onclick="game(0)">
+    <img src="img/バツおじ.png" id="imgChoki" onclick="game(1)">
+    <img src="img/パーおじ.png" id="imgPa" onclick="game(2)">
+    </div>
+    <h2 id="result"></h2>
+  </div>
+  <button id="reStart" class="hide">また挑戦しちゃうの〜？</button>
+  <button id="score" class="hide">結果見ちゃう感じか</button>
+  <script src="script.js"></script>
+</body>
+</html>
