@@ -1,5 +1,5 @@
 const paragraph = document.getElementById('paragraph');
-const imgうざおじ = document.getElementById('imgうざおじ');
+const imgUzaoji = document.getElementById('imgうざおじ');
 const imgGu = document.getElementById('imgGu');
 const imgChoki = document.getElementById('imgChoki');
 const imgPa = document.getElementById('imgPa');
@@ -13,7 +13,7 @@ let win = 0;
 let lose = 0;
 let draw = 0;
 let player = [];
-let うざおじ = [];
+let Uzaoji = [];
 let result = [];
 let handArray = ['グー', 'チョキ', 'パー'];
 let winOrLose = ['勝ち', '負け', 'あいこ'];
@@ -41,14 +41,14 @@ function game(num){
     }
 
     const randomNum = Math.floor(Math.random()*3);
-    うざおじ.push(randomNum);
+    Uzaoji.push(randomNum);
     
     if(randomNum === 0){
-        imgうざおじ.src = 'img/グーおじ２.png';
+        imgUzaoji.src = 'img/グーおじ２.png';
     }else if(randomNum === 1){
-        imgうざおじ.src = 'img/バツおじ２.png';
+        imgUzaoji.src = 'img/バツおじ２.png';
     }else if(randomNum === 2){
-        imgうざおじ.src = 'img/パーおじ２.png';
+        imgUzaoji.src = 'img/パーおじ２.png';
     }
 
     if(num === randomNum){
@@ -82,7 +82,7 @@ reStartButton.onclick = () => {
 
     gameArea.classList.remove('hide');
 
-    imgうざおじ.src = 'img/うざおじ.png';
+    imgUzaoji.src = 'img/Uzaoji.png';
     imgGu.classList.remove('hide');
     imgChoki.classList.remove('hide');
     imgPa.classList.remove('hide');
@@ -101,7 +101,7 @@ scoreButton.onclick = () => {
     for(let i=0;i<result.length;i++){
         text += i+1+ '戦目 ' + winOrLose[result[i]];
         text += ' [あなたの手：' + handArray[player[i]];
-        text += ', 相手の手：' + handArray[うざおじ[i]] + ']\n';
+        text += ', 相手の手：' + handArray[Uzaoji[i]] + ']\n';
     }
     paragraph.innerText = text;
 
