@@ -1,5 +1,5 @@
 const paragraph = document.getElementById('paragraph');
-const imgUzaoji = document.getElementById('imgうざおじ');
+const imgUzaoji = document.getElementById('imgUzaoji');
 const imgGu = document.getElementById('imgGu');
 const imgChoki = document.getElementById('imgChoki');
 const imgPa = document.getElementById('imgPa');
