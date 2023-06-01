@@ -25,7 +25,7 @@ function game(num){
       }
       endFlag=true;
     
-    paragraph.innerText = 'ポン！';
+    paragraph.innerText = 'ポォぉぉん';
 
     player.push(num);
 
