@@ -46,7 +46,7 @@ function game(num){
     if(randomNum === 0){
         imgUzaoji.src = 'img/グーおじ２.png';
     }else if(randomNum === 1){
-        imgUzaoji.src = 'img/バツおじ２.png';
+        imgUzaoji.src = 'img/バツおじ２.png';
     }else if(randomNum === 2){
         imgUzaoji.src = 'img/パーおじ２.png';
     }
